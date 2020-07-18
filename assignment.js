@@ -45,3 +45,29 @@ function brickCalculator (buildingSize){
 
 var result = brickCalculator(21);
 console.log(result);
+
+
+/* tiny Friends Assignment
+***********************************/
+
+function tinyFriend(friendName){
+    var lowest = friendName[0];
+     count = 0;
+     for(i = 0 ; i < friendName.length; i++){
+         var current = friendName[i];
+         if (current < lowest){
+             lowest = current;
+         }
+         var char = friendName[i];
+         if( char == " "){
+             count++;
+         }
+
+     }
+     count++;
+   return lowest;
+
+}
+
+var result = tinyFriend(["samin mia"  , "rakibull mia", "rahi mia", "rokin mia"]);
+console.log(result);
